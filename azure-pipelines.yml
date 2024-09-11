@@ -6,6 +6,14 @@
 trigger:
 - master
 
+parameters:
+  - name: buildConfiguration
+    displayName: 'Build Configuration'
+    type: string
+    default: 'Release'
+    values:
+      - 'Debug'
+      - 'Release'
 pool:
   vmImage: ubuntu-latest
 
